@@ -16,13 +16,18 @@ export function activate(context: vscode.ExtensionContext) {
 	const saludoComando = vscode.commands.registerCommand('helloworld.helloWorld', () => {
 		// El código que pongas aquí se ejecutará cada vez que tu comando sea ejecutado
 		// Muestra un mensaje al usuario
-		vscode.window.showInformationMessage('¡Hola V S Code!');
+		vscode.window.showInformationMessage('¡Hola VS Code!');
 	});
 
-	
+	const mostrarHoraComando = vscode.commands.registerCommand('helloworld.showTime', () => {
+		// Obtener la hora actual
+		const horaActual = new Date().toLocaleTimeString();
+		// Mostrar la hora en un mensaje de advertencia
+		vscode.window.showWarningMessage(`¡Advertencia! La hora actual es: ${horaActual}`);
+	});
 
 	// Agregar los comandos al contexto de la extensión
-	context.subscriptions.push(saludoComando);
+	context.subscriptions.push(saludoComando, mostrarHoraComando);
 }
 
 // Este método se llama cuando tu extensión es desactivada

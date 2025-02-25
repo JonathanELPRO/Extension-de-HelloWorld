@@ -1,6 +1,7 @@
 {
-  "name": "helloworld",
-  "displayName": "HelloWorld",
+  "name": "HelloWorldByTDDTeam",
+  "displayName": "helloworldbytddteam",
+  "publisher": "JonathanMorunoTeran",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -18,8 +19,16 @@
       {
         "command": "helloworld.helloWorld",
         "title": "Saludo Personalizado"
+      },
+      {
+          "command": "helloworld.showTime",
+          "title": "Mostrar Hora"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usuario/primeraExtension.git"
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

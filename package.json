@@ -3,7 +3,7 @@
   "displayName": "helloworldbytddteam",
   "publisher": "JonathanMorunoTeran",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
   },
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/usuario/primeraExtension.git"
+    "url": "https://github.com/JonathanELPRO/Extension-de-HelloWorld"
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

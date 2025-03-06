@@ -19,14 +19,14 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('¡Hola VS Code!');
 	});
 
-	const mostrarHoraComando = vscode.commands.registerCommand('helloworld.showTime', () => {
+	const mostrarHoraComando = vscode.commands.registerCommand('helloworld.showTime', () => {     //aqui estamos registrando el comando en los comandos de vscode pero no en la extension
 		// Obtener la hora actual
 		const horaActual = new Date().toLocaleTimeString();
 		// Mostrar la hora en un mensaje de advertencia
 		vscode.window.showWarningMessage(`¡Advertencia! La hora actual es: ${horaActual}`);
 	});
 
-	// Agregar los comandos al contexto de la extensión
+	// Agregar los comandos al contexto de la extensión un comando es un objeto y sera liberado cuando se desactive la extension
 	context.subscriptions.push(saludoComando, mostrarHoraComando);
 }
 

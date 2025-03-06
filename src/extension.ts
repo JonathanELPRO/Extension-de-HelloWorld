@@ -25,7 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
 		// Mostrar la hora en un mensaje de advertencia
 		vscode.window.showWarningMessage(`¡Advertencia! La hora actual es: ${horaActual}`);
 	});
-
+	//supuesta nueva funcion 0.2.0
 	// Agregar los comandos al contexto de la extensión un comando es un objeto y sera liberado cuando se desactive la extension
 	context.subscriptions.push(saludoComando, mostrarHoraComando);
 }
